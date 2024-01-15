@@ -1,10 +1,14 @@
-/** Adds two given numbers, returning the sum.
- * @param {number} a
- * @param {number} b
- * @returns {number} the sum of a and b
+/** Adds all items in an array and returns the average.
+ * @param {number[]} array - an array of numbers to calculate
+ * @returns {number} the average of numbers in the array.
  */
-function sum(a, b) {
-    return a + b;
+
+const getAverage = (array) => {
+let total = 0;
+for(const element of array){
+    total += element;
+}
+return total/array.length;
 }
 
-export { sum };
+export { getAverage };
